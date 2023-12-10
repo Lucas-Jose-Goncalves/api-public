@@ -1,0 +1,36 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18c1795ed64-7180286179454cce": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ilab",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "ilab",
+				"url": "jdbc:postgresql://localhost:5432/ilab",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-15",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"postgres-jdbc-18c1795ed64-7180286179454cce":{"ilab":{"public":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202311292141\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-18c1795ed64-7180286179454cce\"\u003e\u003centity id\u003d\"1\" name\u003d\"curso\" fq-name\u003d\"public.curso\" order\u003d\"0\" x\u003d\"263\" y\u003d\"20\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"grupo\" fq-name\u003d\"public.grupo\" order\u003d\"1\" x\u003d\"263\" y\u003d\"228\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"inscricao\" fq-name\u003d\"public.inscricao\" order\u003d\"2\" x\u003d\"20\" y\u003d\"216\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"participante\" fq-name\u003d\"public.participante\" order\u003d\"3\" x\u003d\"263\" y\u003d\"413\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"perfil\" fq-name\u003d\"public.perfil\" order\u003d\"4\" x\u003d\"829\" y\u003d\"74\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"usuario\" fq-name\u003d\"public.usuario\" order\u003d\"5\" x\u003d\"833\" y\u003d\"233\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"usuario_perfil\" fq-name\u003d\"public.usuario_perfil\" order\u003d\"6\" x\u003d\"604\" y\u003d\"137\"\u003e\u003cpath name\u003d\"public\"/\u003e\u003cpath name\u003d\"ilab\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"fkmbml713ge13kwqikgpqjsbloy\" fq-name\u003d\"public.inscricao.fkmbml713ge13kwqikgpqjsbloy\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"fkrefyegg73en4uscdacabj1ald\" fq-name\u003d\"public.inscricao.fkrefyegg73en4uscdacabj1ald\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"fk41ugugnp09s9g76g2m4l0mk21\" fq-name\u003d\"public.inscricao.fk41ugugnp09s9g76g2m4l0mk21\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"usuario_perfil_id_perfil_fkey\" fq-name\u003d\"public.usuario_perfil.usuario_perfil_id_perfil_fkey\" type\u003d\"fk\" pk-ref\u003d\"5\" fk-ref\u003d\"7\"/\u003e\u003crelation name\u003d\"usuario_perfil_id_usuario_fkey\" fq-name\u003d\"public.usuario_perfil.usuario_perfil_id_usuario_fkey\" type\u003d\"fk\" pk-ref\u003d\"6\" fk-ref\u003d\"7\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Desenvolvimento",
+			"color": "255,255,255",
+			"description": "Banco de dados de desenvolvimento",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
